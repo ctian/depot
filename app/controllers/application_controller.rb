@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   private
 
-  def current_card
+  def current_cart
     Cart.find(session[:cart_id])
   rescue
     cart = Cart.create
