@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(:version => 20111120201221) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "quantity",   :default => 1
-    t.integer  "price"
     t.integer  "order_id"
   end
 
