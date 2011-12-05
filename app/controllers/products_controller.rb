@@ -82,8 +82,7 @@ class ProductsController < ApplicationController
   end
 
   def who_bought
-    @products = Product.find(params[:id])
-    logger.info("======> #{@product}")
+    @product = Product.find(params[:id])
     respond_to do |format|
       format.atom
       format.xml { render :xml => @product }
